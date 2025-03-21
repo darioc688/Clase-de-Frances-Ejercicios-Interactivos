@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grado 2 - Clase de Francés</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Grado 2 - Clase de Francés</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="grade1.html">Grado 1</a>
+      <a href="grade2.html">Grado 2</a>
+      <a href="grade3.html">Grado 3</a>
+      <a href="grade4.html">Grado 4</a>
+      <a href="grade5.html">Grado 5</a>
+    </nav>
+  </header>
+  <main>
+    <div id="exercise-container">
+      <!-- Se inyectarán los ejercicios -->
+    </div>
+    <div id="feedback"></div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Clase de Francés</p>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    // Array de 20 ejercicios para el Grado 2 (personaliza las preguntas según el nivel)
+    const questions = [
+      { type: "fill", question: "Traduce al francés: 'estudio'", correctAnswer: "étudie" },
+      { type: "mcq", question: "¿Cómo se dice 'ciudad' en francés?", options: ["ville", "campagne", "rue"], correctAnswer: "ville" },
+      { type: "select", question: "Selecciona el verbo para 'escribir' en francés", options: ["écrire", "lire", "parler"], correctAnswer: "écrire" },
+      { type: "fill", question: "Traduce al francés: 'escucho'", correctAnswer: "écoute" },
+      { type: "mcq", question: "¿Cómo se dice 'rojo' en francés?", options: ["rouge", "bleu", "vert"], correctAnswer: "rouge" },
+      { type: "select", question: "Selecciona la traducción de 'amigo'", options: ["ami", "ennemi", "voisin"], correctAnswer: "ami" },
+      { type: "fill", question: "Traduce al francés: 'ella canta'", correctAnswer: "chante" },
+      { type: "mcq", question: "¿Cómo se dice 'día' en francés?", options: ["jour", "nuit", "matin"], correctAnswer: "jour" },
+      { type: "select", question: "Selecciona el verbo para 'dormir' en francés", options: ["dormir", "manger", "parler"], correctAnswer: "dormir" },
+      { type: "fill", question: "Traduce al francés: 'nosotros escribimos'", correctAnswer: "écrivons" },
+      { type: "mcq", question: "¿Cómo se dice 'silla' en francés?", options: ["chaise", "table", "lit"], correctAnswer: "chaise" },
+      { type: "select", question: "Selecciona la traducción de 'feliz'", options: ["heureux", "triste", "fâché"], correctAnswer: "heureux" },
+      { type: "fill", question: "Traduce al francés: 'vosotros estudiáis'", correctAnswer: "étudiez" },
+      { type: "mcq", question: "¿Cómo se dice 'ventana' en francés?", options: ["fenêtre", "porte", "mur"], correctAnswer: "fenêtre" },
+      { type: "select", question: "Selecciona el verbo para 'correr' en francés", options: ["courir", "marcher", "sauter"], correctAnswer: "courir" },
+      { type: "fill", question: "Traduce al francés: 'ellos escriben'", correctAnswer: "écrivent" },
+      { type: "mcq", question: "¿Cómo se dice 'cielo' en francés?", options: ["ciel", "terre", "eau"], correctAnswer: "ciel" },
+      { type: "select", question: "Selecciona la traducción de 'bonito'", options: ["joli", "laid", "vieux"], correctAnswer: "joli" },
+      { type: "fill", question: "Traduce al francés: 'yo escucho'", correctAnswer: "écoute" },
+      { type: "mcq", question: "¿Cómo se dice 'estrella' en francés?", options: ["étoile", "lune", "soleil"], correctAnswer: "étoile" }
+    ];
+    
+    initializeGrade(questions, "Grado 2");
+  </script>
+</body>
+</html>
