@@ -1,4 +1,4 @@
-/* Estilos generales */
+/* style.css */
 body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
@@ -13,19 +13,14 @@ header, footer {
   padding: 1em;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  margin: 0 10px;
+nav {
+  margin: 0.5em 0;
 }
 
 nav a {
   color: white;
   text-decoration: none;
+  margin: 0 0.5em;
   font-weight: bold;
 }
 
@@ -41,6 +36,10 @@ main {
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
+#exercise-container h2 {
+  margin-top: 0;
+}
+
 input, select, button {
   margin-top: 0.5em;
   padding: 0.5em;
@@ -50,4 +49,8 @@ input, select, button {
 #feedback {
   margin-top: 1em;
   font-size: 1.2em;
+}
+
+footer {
+  margin-top: 2em;
 }
