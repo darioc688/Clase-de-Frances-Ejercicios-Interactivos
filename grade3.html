@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grado 3 - Clase de Francés</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Grado 3 - Clase de Francés</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="grade1.html">Grado 1</a>
+      <a href="grade2.html">Grado 2</a>
+      <a href="grade3.html">Grado 3</a>
+      <a href="grade4.html">Grado 4</a>
+      <a href="grade5.html">Grado 5</a>
+    </nav>
+  </header>
+  <main>
+    <div id="exercise-container"></div>
+    <div id="feedback"></div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Clase de Francés</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const questions = [
+      { type: "fill", question: "Traduce al francés: 'trabajo'", correctAnswer: "travaille" },
+      { type: "mcq", question: "¿Cómo se dice 'felicidad'?", options: ["bonheur","tristesse","colère"], correctAnswer: "bonheur" },
+      { type: "select", question: "Selecciona el verbo para 'conocer'", options: ["connaître","savoir","penser"], correctAnswer: "connaître" },
+      { type: "fill", question: "Traduce al francés: 'viajo'", correctAnswer: "voyage" },
+      { type: "mcq", question: "¿Cómo se dice 'montaña'?", options: ["montagne","rivière","forêt"], correctAnswer: "montagne" },
+      { type: "select", question: "Selecciona la traducción de 'canción'", options: ["chanson","musique","voix"], correctAnswer: "chanson" },
+      { type: "fill", question: "Traduce al francés: 'él estudia'", correctAnswer: "étudie" },
+      { type: "mcq", question: "¿Cómo se dice 'ventaja'?", options: ["avantage","inconvénient","chance"], correctAnswer: "avantage" },
+      { type: "select", question: "Selecciona el verbo para 'creer'", options: ["croire","penser","imaginer"], correctAnswer: "croire" },
+      { type: "fill", question: "Traduce al francés: 'nosotros viajamos'", correctAnswer: "voyageons" },
+      { type: "mcq", question: "¿Cómo se dice 'bosque'?", options: ["forêt","désert","lac"], correctAnswer: "forêt" },
+      { type: "select", question: "Selecciona la traducción de 'equipo'", options: ["équipe","groupe","foule"], correctAnswer: "équipe" },
+      { type: "fill", question: "Traduce al francés: 'ellos trabajan'", correctAnswer: "travaillent" },
+      { type: "mcq", question: "¿Cómo se dice 'primavera'?", options: ["printemps","été","automne"], correctAnswer: "printemps" },
+      { type: "select", question: "Selecciona el verbo para 'encontrar'", options: ["trouver","chercher","perdre"], correctAnswer: "trouver" },
+      { type: "fill", question: "Traduce al francés: 'yo creo'", correctAnswer: "crois" },
+      { type: "mcq", question: "¿Cómo se dice 'pregunta'?", options: ["question","réponse","demande"], correctAnswer: "question" },
+      { type: "select", question: "Selecciona la traducción de 'cuerpo'", options: ["corps","tête","jambe"], correctAnswer: "corps" },
+      { type: "fill", question: "Traduce al francés: 'él viaja'", correctAnswer: "voyage" },
+      { type: "mcq", question: "¿Cómo se dice 'reloj'?", options: ["montre","horloge","temps"], correctAnswer: "montre" }
+    ];
+    
+    initializeGrade(questions, "Grado 3");
+  </script>
+</body>
+</html>
