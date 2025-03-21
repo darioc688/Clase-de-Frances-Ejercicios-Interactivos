@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grado 4 - Clase de Francés</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Grado 4 - Clase de Francés</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="grade1.html">Grado 1</a>
+      <a href="grade2.html">Grado 2</a>
+      <a href="grade3.html">Grado 3</a>
+      <a href="grade4.html">Grado 4</a>
+      <a href="grade5.html">Grado 5</a>
+    </nav>
+  </header>
+  <main>
+    <div id="exercise-container"></div>
+    <div id="feedback"></div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Clase de Francés</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const questions = [
+      { type: "fill", question: "Traduce al francés: 'estoy aprendiendo'", correctAnswer: "j'apprends" },
+      { type: "mcq", question: "¿Cómo se dice 'conversación'?", options: ["conversation","parole","discours"], correctAnswer: "conversation" },
+      { type: "select", question: "Selecciona el verbo para 'comprender'", options: ["comprendre","apprendre","enseigner"], correctAnswer: "comprendre" },
+      { type: "fill", question: "Traduce al francés: 'él enseña'", correctAnswer: "enseigne" },
+      { type: "mcq", question: "¿Cómo se dice 'cocina'?", options: ["cuisine","salon","chambre"], correctAnswer: "cuisine" },
+      { type: "select", question: "Selecciona la traducción de 'sociedad'", options: ["société","communauté","peuple"], correctAnswer: "société" },
+      { type: "fill", question: "Traduce al francés: 'nosotros aprendemos'", correctAnswer: "apprenons" },
+      { type: "mcq", question: "¿Cómo se dice 'negocio'?", options: ["entreprise","loisir","marché"], correctAnswer: "entreprise" },
+      { type: "select", question: "Selecciona el verbo para 'enseñar'", options: ["enseigner","montrer","apprendre"], correctAnswer: "enseigner" },
+      { type: "fill", question: "Traduce al francés: 'yo comprendo'", correctAnswer: "comprends" },
+      { type: "mcq", question: "¿Cómo se dice 'preguntar'?", options: ["demander","répondre","dire"], correctAnswer: "demander" },
+      { type: "select", question: "Selecciona la traducción de 'respuesta'", options: ["réponse","question","solution"], correctAnswer: "réponse" },
+      { type: "fill", question: "Traduce al francés: 'él comprende'", correctAnswer: "comprend" },
+      { type: "mcq", question: "¿Cómo se dice 'problema'?", options: ["problème","solution","erreur"], correctAnswer: "problème" },
+      { type: "select", question: "Selecciona el verbo para 'crecer'", options: ["grandir","bâtir","remplir"], correctAnswer: "grandir" },
+      { type: "fill", question: "Traduce al francés: 'nosotros enseñamos'", correctAnswer: "enseignons" },
+      { type: "mcq", question: "¿Cómo se dice 'mercado'?", options: ["marché","magasin","boutique"], correctAnswer: "marché" },
+      { type: "select", question: "Selecciona la traducción de 'respuesta correcta'", options: ["bonne réponse","mauvaise réponse","réponse courte"], correctAnswer: "bonne réponse" },
+      { type: "fill", question: "Traduce al francés: 'ellos aprenden'", correctAnswer: "apprennent" },
+      { type: "mcq", question: "¿Cómo se dice 'largo'?", options: ["long","court","large"], correctAnswer: "long" }
+    ];
+    
+    initializeGrade(questions, "Grado 4");
+  </script>
+</body>
+</html>
