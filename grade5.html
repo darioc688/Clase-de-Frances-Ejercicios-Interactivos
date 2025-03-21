@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grado 5 - Clase de Francés</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Grado 5 - Clase de Francés</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="grade1.html">Grado 1</a>
+      <a href="grade2.html">Grado 2</a>
+      <a href="grade3.html">Grado 3</a>
+      <a href="grade4.html">Grado 4</a>
+      <a href="grade5.html">Grado 5</a>
+    </nav>
+  </header>
+  <main>
+    <div id="exercise-container"></div>
+    <div id="feedback"></div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Clase de Francés</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    const questions = [
+      { type: "fill", question: "Traduce al francés: 'discuto'", correctAnswer: "discute" },
+      { type: "mcq", question: "¿Cómo se dice 'pensamiento'?", options: ["pensée","esprit","idée"], correctAnswer: "pensée" },
+      { type: "select", question: "Selecciona el verbo para 'desarrollar'", options: ["développer","construire","élever"], correctAnswer: "développer" },
+      { type: "fill", question: "Traduce al francés: 'él reflexiona'", correctAnswer: "réfléchit" },
+      { type: "mcq", question: "¿Cómo se dice 'conocimiento'?", options: ["connaissance","intelligence","culture"], correctAnswer: "connaissance" },
+      { type: "select", question: "Selecciona la traducción de 'descubrimiento'", options: ["découverte","invention","révélation"], correctAnswer: "découverte" },
+      { type: "fill", question: "Traduce al francés: 'yo construyo'", correctAnswer: "construis" },
+      { type: "mcq", question: "¿Cómo se dice 'verdad'?", options: ["vérité","mensonge","histoire"], correctAnswer: "vérité" },
+      { type: "select", question: "Selecciona el verbo para 'reconocer'", options: ["reconnaître","admettre","voir"], correctAnswer: "reconnaître" },
+      { type: "fill", question: "Traduce al francés: 'nosotros discutimos'", correctAnswer: "discutons" },
+      { type: "mcq", question: "¿Cómo se dice 'misterio'?", options: ["mystère","secret","intrigue"], correctAnswer: "mystère" },
+      { type: "select", question: "Selecciona la traducción de 'lógica'", options: ["logique","raison","preuve"], correctAnswer: "logique" },
+      { type: "fill", question: "Traduce al francés: 'ellos construyen'", correctAnswer: "construisent" },
+      { type: "mcq", question: "¿Cómo se dice 'respuesta errónea'?", options: ["mauvaise réponse","bonne réponse","réponse claire"], correctAnswer: "mauvaise réponse" },
+      { type: "select", question: "Selecciona el verbo para 'crecer (en sentido figurado)'", options: ["grandir","augmenter","monter"], correctAnswer: "grandir" },
+      { type: "fill", question: "Traduce al francés: 'yo reconozco'", correctAnswer: "reconnais" },
+      { type: "mcq", question: "¿Cómo se dice 'opción'?", options: ["choix","option","alternative"], correctAnswer: "choix" },
+      { type: "select", question: "Selecciona la traducción de 'experiencia'", options: ["expérience","aventure","sensation"], correctAnswer: "expérience" },
+      { type: "fill", question: "Traduce al francés: 'él desarrolla'", correctAnswer: "développe" },
+      { type: "mcq", question: "¿Cómo se dice 'nivel avanzado'?", options: ["niveau avancé","niveau débutant","niveau moyen"], correctAnswer: "niveau avancé" }
+    ];
+    
+    initializeGrade(questions, "Grado 5");
+  </script>
+</body>
+</html>
