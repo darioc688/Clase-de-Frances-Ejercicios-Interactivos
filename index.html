@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clase de Francés - Ejercicios</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Clase de Francés: Aprende Francés desde el Español</h1>
+  </header>
+  <main>
+    <section id="fillInBlanks">
+      <h2>Ejercicio: Completa los espacios</h2>
+      <p>
+        Completa la siguiente frase en francés:<br>
+        "Je ___ (hablar) français."
+      </p>
+      <input type="text" id="blank1" placeholder="Escribe la respuesta en francés">
+      <button onclick="checkFillInBlanks()">Comprobar</button>
+      <p id="fillResult"></p>
+    </section>
+    
+    <section id="multipleOptions">
+      <h2>Ejercicio: Selecciona la opción correcta</h2>
+      <p>¿Cuál es la traducción correcta al francés de "manzana"?</p>
+      <form id="mcqForm">
+        <label><input type="radio" name="mcq" value="pomme"> pomme</label><br>
+        <label><input type="radio" name="mcq" value="banane"> banane</label><br>
+        <label><input type="radio" name="mcq" value="orange"> orange</label><br>
+        <button type="button" onclick="checkMCQ()">Comprobar</button>
+      </form>
+      <p id="mcqResult"></p>
+    </section>
+    
+    <section id="selectWord">
+      <h2>Ejercicio: Selecciona la palabra correcta</h2>
+      <p>Selecciona el verbo correcto en francés para "comer":</p>
+      <select id="selectWordDropdown">
+        <option value="">Selecciona una opción</option>
+        <option value="manger">manger</option>
+        <option value="boire">boire</option>
+        <option value="parler">parler</option>
+      </select>
+      <button onclick="checkSelectWord()">Comprobar</button>
+      <p id="selectResult"></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Clase de Francés</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
