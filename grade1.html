@@ -19,42 +19,40 @@
     </nav>
   </header>
   <main>
-    <div id="exercise-container">
-      <!-- Aquí se inyectará cada ejercicio -->
-    </div>
+    <div id="exercise-container"></div>
     <div id="feedback"></div>
   </main>
   <footer>
     <p>&copy; 2025 Clase de Francés</p>
   </footer>
+
+  <!-- Carga el script con la función initializeGrade -->
   <script src="script.js"></script>
+  <!-- Configura las preguntas y arranca -->
   <script>
-    // Array de 20 ejercicios para el Grado 1
-    // Se incluyen 3 tipos de ejercicio: fill (completar), mcq (opción múltiple) y select (desplegable)
     const questions = [
       { type: "fill", question: "Traduce al francés: 'hablo'", correctAnswer: "parle" },
-      { type: "mcq", question: "¿Cómo se dice 'manzana' en francés?", options: ["pomme", "banane", "orange"], correctAnswer: "pomme" },
-      { type: "select", question: "Selecciona el verbo correcto para 'comer' en francés", options: ["manger", "boire", "dormir"], correctAnswer: "manger" },
+      { type: "mcq", question: "¿Cómo se dice 'manzana'?", options: ["pomme", "banane", "orange"], correctAnswer: "pomme" },
+      { type: "select", question: "Selecciona el verbo para 'comer'", options: ["manger", "boire", "parler"], correctAnswer: "manger" },
       { type: "fill", question: "Traduce al francés: 'tú hablas'", correctAnswer: "parles" },
-      { type: "mcq", question: "¿Cómo se dice 'perro' en francés?", options: ["chat", "chien", "oiseau"], correctAnswer: "chien" },
-      { type: "select", question: "Selecciona la traducción correcta de 'gracias'", options: ["merci", "bonjour", "au revoir"], correctAnswer: "merci" },
+      { type: "mcq", question: "¿Cómo se dice 'perro'?", options: ["chat","chien","oiseau"], correctAnswer: "chien" },
+      { type: "select", question: "Selecciona la traducción de 'gracias'", options: ["merci","bonjour","au revoir"], correctAnswer: "merci" },
       { type: "fill", question: "Traduce al francés: 'él come'", correctAnswer: "mange" },
-      { type: "mcq", question: "¿Cómo se dice 'escuela' en francés?", options: ["école", "maison", "bureau"], correctAnswer: "école" },
-      { type: "select", question: "Selecciona el verbo para 'beber' en francés", options: ["boire", "manger", "parler"], correctAnswer: "boire" },
+      { type: "mcq", question: "¿Cómo se dice 'escuela'?", options: ["école","maison","bureau"], correctAnswer: "école" },
+      { type: "select", question: "Selecciona el verbo para 'beber'", options: ["boire","manger","parler"], correctAnswer: "boire" },
       { type: "fill", question: "Traduce al francés: 'nosotros hablamos'", correctAnswer: "parlons" },
-      { type: "mcq", question: "¿Cómo se dice 'libro' en francés?", options: ["livre", "stylo", "chaise"], correctAnswer: "livre" },
-      { type: "select", question: "Selecciona la traducción de 'amor'", options: ["amour", "haine", "joie"], correctAnswer: "amour" },
+      { type: "mcq", question: "¿Cómo se dice 'libro'?", options: ["livre","stylo","chaise"], correctAnswer: "livre" },
+      { type: "select", question: "Selecciona la traducción de 'amor'", options: ["amour","haine","joie"], correctAnswer: "amour" },
       { type: "fill", question: "Traduce al francés: 'vosotros coméis'", correctAnswer: "mangez" },
-      { type: "mcq", question: "¿Cómo se dice 'casa' en francés?", options: ["maison", "voiture", "jardin"], correctAnswer: "maison" },
-      { type: "select", question: "Selecciona el verbo para 'leer' en francés", options: ["lire", "écrire", "écouter"], correctAnswer: "lire" },
+      { type: "mcq", question: "¿Cómo se dice 'casa'?", options: ["maison","voiture","jardin"], correctAnswer: "maison" },
+      { type: "select", question: "Selecciona el verbo para 'leer'", options: ["lire","écrire","écouter"], correctAnswer: "lire" },
       { type: "fill", question: "Traduce al francés: 'ellos hablan'", correctAnswer: "parlent" },
-      { type: "mcq", question: "¿Cómo se dice 'agua' en francés?", options: ["eau", "lait", "vin"], correctAnswer: "eau" },
-      { type: "select", question: "Selecciona la traducción de 'bueno'", options: ["bon", "mauvais", "beau"], correctAnswer: "bon" },
+      { type: "mcq", question: "¿Cómo se dice 'agua'?", options: ["eau","lait","vin"], correctAnswer: "eau" },
+      { type: "select", question: "Selecciona la traducción de 'bueno'", options: ["bon","mauvais","beau"], correctAnswer: "bon" },
       { type: "fill", question: "Traduce al francés: 'yo como'", correctAnswer: "mange" },
-      { type: "mcq", question: "¿Cómo se dice 'libre' en francés?", options: ["libre", "occupé", "fermé"], correctAnswer: "libre" }
+      { type: "mcq", question: "¿Cómo se dice 'libre'?", options: ["libre","occupé","fermé"], correctAnswer: "libre" }
     ];
     
-    // Inicializa la sección para el grado especificado
     initializeGrade(questions, "Grado 1");
   </script>
 </body>
